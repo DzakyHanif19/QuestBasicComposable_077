@@ -64,7 +64,7 @@ fun BasicCompose(
         style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold))
     Text(text = "20220140077",
         style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold),
-    )
+        )
     }
 }
 
