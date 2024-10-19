@@ -59,7 +59,8 @@ fun BasicCompose(
     )
     Text(text="Nama",
         modifier = modifier.padding(top = 10.dp))
-
+    Text(text = "Dzaky Hanif Annafi",
+    )
     }
 }
 
