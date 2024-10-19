@@ -53,7 +53,10 @@ fun BasicCompose(
     Text(text = "Login", style = TextStyle(fontSize = 50.sp,
         fontWeight = FontWeight.Bold ))
     Text(text = "Ini  halaman Login ")
-
+    Image(painter = painterResource(id = R.drawable.logo),
+        contentDescription = null,
+        modifier = modifier.padding(top = 18.dp).size(200.dp)
+    )
 
     }
 }
