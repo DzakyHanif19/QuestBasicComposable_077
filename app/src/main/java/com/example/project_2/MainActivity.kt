@@ -25,3 +25,41 @@ import androidx.compose.ui.unit.sp
 import com.example.project2.R
 import com.example.project_2.ui.theme.Project_2Theme
 
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            Project_2Theme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                   BasicCompose(
+                        modifier = Modifier.padding(innerPadding)
+                   )
+
+                }
+            }
+        }
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun BasicCompose(
+    modifier: Modifier = Modifier){
+
+}
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    Project_2Theme {
+        Greeting("Android")
+    }
+}
