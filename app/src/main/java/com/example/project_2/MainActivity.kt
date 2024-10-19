@@ -61,7 +61,8 @@ fun BasicCompose(
         modifier = modifier.padding(top = 10.dp))
     Text(text = "Dzaky Hanif Annafi",
         color = Color.Red,
-    )
+        style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold))
+
     }
 }
 
